@@ -652,21 +652,25 @@ VISUAL STUDIO
 
 Is a source code editor developed by Microsoft for windows, linux and macOS. It includes support for debugging, embedded Git control...in our lab project, we choose visual studio to implement our application and develop environment tools.
 
-##IV-2 DESIGN CONSTRAINTS:
+IV-2 DESIGN CONSTRAINTS:
+------------------------
 
 This part includes the design constraints on the software caused by the hardware.
  
-###IV-2-1 Hard drive space
+IV-2-1 Hard drive space
+------------------------
 
 For our project, the application's need of hard drive space.
 
 For meter we need MegaByte MB.
  
-###IV-2-2 Application memory usage
+IV-2-2 Application memory usage
+-------------------------------
 
 Application memory can take GegaByte MB. Project includes many applications.
  
-###IV-3 Software system attributes
+IV-3 Software system attributes
+-------------------------------
 
 The attribute requirements are the heart ans soul of why our customers will value our software.
  
