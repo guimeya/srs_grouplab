@@ -1,0 +1,522 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>PROJECT LAB: SOFTWARE REQUIREMENTS SPECIFICATION &#8212; srs_group 1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="project-lab-software-requirements-specification">
+<h1>PROJECT LAB: SOFTWARE REQUIREMENTS SPECIFICATION<a class="headerlink" href="#project-lab-software-requirements-specification" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="srs">
+<h1>SRS<a class="headerlink" href="#srs" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="students-name-and-id">
+<h1>STUDENTS NAME AND ID:<a class="headerlink" href="#students-name-and-id" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="guimeya-jiofack-janny-carole-201825800044">
+<h2>GUIMEYA JIOFACK JANNY CAROLE 201825800044<a class="headerlink" href="#guimeya-jiofack-janny-carole-201825800044" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="ahinkora-thomas-201825800061">
+<h2>AHINKORA THOMAS 201825800061<a class="headerlink" href="#ahinkora-thomas-201825800061" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="i-intoduction">
+<h1>I- INTODUCTION<a class="headerlink" href="#i-intoduction" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="i-1-purpose">
+<h2>I-1 PURPOSE:<a class="headerlink" href="#i-1-purpose" title="Permalink to this headline">¶</a></h2>
+<p>The purpose of this document is to present a detailed description of a lap report repository. It will explain the purpose and features of the Lab report, the interfaces of the lab report, what the lab report will do, the constraints under which it must operate and how the system will react to external stimuli. This document is intended for students, instructors, visitors, TAs and administrators of the system.</p>
+</div>
+<div class="section" id="i-2-scope-of-project">
+<h2>I-2 SCOPE OF PROJECT:<a class="headerlink" href="#i-2-scope-of-project" title="Permalink to this headline">¶</a></h2>
+<p>This software system will be a lab report repository for student to be able to upload their assignments. This system will be designed to help instructors to read and mark uploaded assignments of student also other visitors can visit the system if they want to. The lab report will be to understand and use.</p>
+<p>More specifically, this lab report is designed to allow an administrator to manage and communicate with a group of reviewers and student who post to a public web side. The software will facilitate communication between instructors, students, visitors and TAs via E-mail. Preformatted reply forms are used in every stage of the report progress through the system to provide a uniform review process; the location of these forms is configurable via the application?s maintenance options.</p>
+</div>
+<div class="section" id="i-3-definition">
+<h2>I-3 DEFINITION:<a class="headerlink" href="#i-3-definition" title="Permalink to this headline">¶</a></h2>
+<p>Instructor</p>
+<p>is a teacher of the lab responsible to update some information and send it to the students.</p>
+<p>Student</p>
+<p>is someone who is registered for the lab class.</p>
+<p>Administrator</p>
+<p>is a system admin who is giving specific permission for managing and controlling the system.</p>
+<p>Visitor</p>
+<p>someone else who visit or take part of some information in our application.</p>
+<p>TAs</p>
+<p>is a teacher assistant who update some information.</p>
+</div>
+<div class="section" id="ii-description">
+<h2>II- DESCRIPTION:<a class="headerlink" href="#ii-description" title="Permalink to this headline">¶</a></h2>
+<p>This section will give an overview of the whole system. The system will be explained in its context to show how the system interacts with other systems and introduce the basic functionality of it. It will also describe what type of stakeholders that will use the system and what functionality is available for each type.</p>
+</div>
+<div class="section" id="ii-1-product-perspectives">
+<h2>II-1 PRODUCT PERSPECTIVES:<a class="headerlink" href="#ii-1-product-perspectives" title="Permalink to this headline">¶</a></h2>
+<p>This system will consist of only one part: web portal. The web portal will be used for managing the information about the website and the?system as a whole.</p>
+<p>Since this is a data-centric product it will need somewhere to store the data. For that, a database will be used. The web portal will communicate with the database, however in slightly different ways. The web portal will also add and modify data. All of the database communication will go over the Internet.</p>
+<img alt="_images/figure1.png" src="_images/figure1.png" />
+<p>Fig: Block diagram</p>
+</div>
+<div class="section" id="ii-2-product-functions">
+<h2>II-2 PRODUCT FUNCTIONS:<a class="headerlink" href="#ii-2-product-functions" title="Permalink to this headline">¶</a></h2>
+<p>With the web application, student will be able to post their assignment and get information back from the instructors and TAs, the visitors will also be able to search for information. It will be possible for the administrator of the system to manage the options for those criteria that have that.</p>
+<p>The result of the search will be viewed either in a list view.</p>
+<p>The web portal will provide functionality to manage the system and the web information. It will also provide information about the system.</p>
+</div>
+<div class="section" id="ii-3-user-characteristics">
+<h2>II-3 USER CHARACTERISTICS:<a class="headerlink" href="#ii-3-user-characteristics" title="Permalink to this headline">¶</a></h2>
+<p>There are five types of users that interact with the system: users of the web application, student, instructors, TAs, visitors and administrators. Each of these five types of users has different use of the system so each of them has their own requirements.</p>
+<p>The student users can post assignments and give feedback to the instructors. The instructors can also post assignment, mark assignment and give feedback to students. The TAs also works like the instructors they have the same funtions. The visitors only search for information on the system.</p>
+<p>The administrators also only interact with the web portal. They are managing the overall system so there is no incorrect information within it. The administrator can manage the information.</p>
+</div>
+<div class="section" id="ii-4-constraints">
+<h2>II-4 CONSTRAINTS:<a class="headerlink" href="#ii-4-constraints" title="Permalink to this headline">¶</a></h2>
+<p>The Internet connection is also a constraint for the application. Since the application fetches data from the database over the Internet, it is crucial that there is an Internet connection for the application to function.</p>
+<p>The web portal will be constrained by the capacity of the database.</p>
+</div>
+<div class="section" id="ii-5-assumptions-and-dependencies">
+<h2>II-5 ASSUMPTIONS AND DEPENDENCIES:<a class="headerlink" href="#ii-5-assumptions-and-dependencies" title="Permalink to this headline">¶</a></h2>
+<p>One assumption about the product is that it can also be used on mobile phones Another assumption is that the visitors can be able to asses some information?s on the system.</p>
+</div>
+<div class="section" id="ii-6-apportioning-of-requirements">
+<h2>II-6 APPORTIONING OF REQUIREMENTS:<a class="headerlink" href="#ii-6-apportioning-of-requirements" title="Permalink to this headline">¶</a></h2>
+<p>In the case that the project is delayed, there are some requirements that could be transferred to the next version of the application. Those requirements are to be developed in the third release.</p>
+</div>
+</div>
+<div class="section" id="iii-specific-requirements">
+<h1>III- SPECIFIC REQUIREMENTS:<a class="headerlink" href="#iii-specific-requirements" title="Permalink to this headline">¶</a></h1>
+<p>This section contains all of the functional and quality requirements of the system. It gives a detailed description of the system and all its features.</p>
+<div class="section" id="iii-1-external-interface-requirements">
+<h2>III-1 EXTERNAL INTERFACE REQUIREMENTS:<a class="headerlink" href="#iii-1-external-interface-requirements" title="Permalink to this headline">¶</a></h2>
+<p>This section provides a detailed description of all inputs into and outputs from the system. It also gives a description of the hardware, software and communication interfaces and provides basic prototypes of the user interface.</p>
+</div>
+<div class="section" id="iii-1-1-user-interfaces">
+<h2>III-1-1 USER INTERFACES:<a class="headerlink" href="#iii-1-1-user-interfaces" title="Permalink to this headline">¶</a></h2>
+<p>A first-time user of the application should see the log-in page when he/she opens the application, see Figure 2. If the user has not sign up, he/she should be able to do that on the log-in page.</p>
+<p>If the user is not a first-time user, he/she should be able to see the home page directly when the application is opened, see Figure 3. Here the user chooses the type of program he/she wants to conduct.</p>
+<p>Every user should have a profile page where they can edit their e-mail address, ID number, select program, language and password, see Figure 4.</p>
+<img alt="_images/figure2.png" src="_images/figure2.png" />
+<p>Fig: Login page Fig: Search page Fig: Profile page</p>
+<p>In Figure 5, Students, instructor, visitors, TAs and administrators interact with the system through a web-portal. A student should be able to register on the web-portal in order to log in and manage his/her account. An administrator should also be able to log in to the web-portal where he/she can administer the system by for instance editing restaurant or user information.</p>
+<img alt="_images/figure3.png" src="_images/figure3.png" />
+</div>
+<div class="section" id="iii-1-2-hardware-interfaces">
+<h2>III-1-2 HARDWARE INTERFACES:<a class="headerlink" href="#iii-1-2-hardware-interfaces" title="Permalink to this headline">¶</a></h2>
+<p>Since the web portal have any designated hardware, it does not have any direct hardware interfaces. The hardware connection to the database server is managed by the underlying operating system on the computer and the web server.</p>
+</div>
+<div class="section" id="iii-1-3-software-interfaces">
+<h2>III-1-3 SOFTWARE INTERFACES:<a class="headerlink" href="#iii-1-3-software-interfaces" title="Permalink to this headline">¶</a></h2>
+<p>The system communicates with the database to get information about the students, visitors and instructor. the communication between database and web portal consists of modifying and updating user informations.</p>
+</div>
+<div class="section" id="iii-2-functional-requirements">
+<h2>III-2 FUNCTIONAL REQUIREMENTS:<a class="headerlink" href="#iii-2-functional-requirements" title="Permalink to this headline">¶</a></h2>
+<p>This section include the requirements that specify all the fundamental actions of our software system , such as uses case.</p>
+</div>
+<div class="section" id="iii-2-1-actors-of-system">
+<h2>III-2-1 ACTORS OF SYSTEM:<a class="headerlink" href="#iii-2-1-actors-of-system" title="Permalink to this headline">¶</a></h2>
+<p>Students</p>
+<p>Instructors</p>
+<p>TAs</p>
+<p>Administrators</p>
+<p>Visitors</p>
+<img alt="_images/tables.png" src="_images/tables.png" />
+</div>
+<div class="section" id="iii-2-2-database">
+<h2>III-2-2 DATABASE:<a class="headerlink" href="#iii-2-2-database" title="Permalink to this headline">¶</a></h2>
+<p>A database is an organized collection of data, stored and accessed electronically. Database designers typically organize the data to model aspects of reality in a way that supports processes requiring information, such as (for example) modelling the online lab report of students assignment in lab and teacher give them feedback.</p>
+<p>For this project, we have five (5) tables such as:</p>
+<p>1- students</p>
+<img alt="_images/student.png" src="_images/student.png" />
+<p>Fig: student table</p>
+<p>2- instructors</p>
+<img alt="_images/instructor.png" src="_images/instructor.png" />
+<p>Fig: instructor table</p>
+<p>3- administrators</p>
+<img alt="_images/admin.png" src="_images/admin.png" />
+<p>Fig: administrator table</p>
+<p>4- TAs</p>
+<img alt="_images/tas.png" src="_images/tas.png" />
+<p>Fig: TAs table</p>
+<p>5- visitors</p>
+<img alt="_images/visitor.png" src="_images/visitor.png" />
+<p>Fig: visitor table</p>
+</div>
+<div class="section" id="iii-2-3-uml-diagrams">
+<h2>III-2-3 UML DIAGRAMS:<a class="headerlink" href="#iii-2-3-uml-diagrams" title="Permalink to this headline">¶</a></h2>
+<p>UML means Unified Modeling Language. UML is a way of visualizing a software program using a collection of diagrams. UML 2.0 helped extend the original UML specification to cover a wider portion of software development efforts including agile practices.</p>
+<p>Development process and UML diagram :</p>
+<img alt="_images/table1.png" src="_images/table1.png" />
+</div>
+<div class="section" id="iii-2-3-1-behavioral-uml-diagrams">
+<h2>III-2-3-1 Behavioral UML diagrams:<a class="headerlink" href="#iii-2-3-1-behavioral-uml-diagrams" title="Permalink to this headline">¶</a></h2>
+<p>A- Use case diagram</p>
+<p>A use case diagram is a set of use cases, actors and their relationships.it?s represents the use case view of a system. For our project lab, we have five (5) actors and then we have doing a use case of each actor of system. It represents a particular functionality of a system. Use case diagram is used to describe the relationships among the functionalities and their internal/external controllers. These controllers are known as actors. For example, for our lab project , our controllers is admin.</p>
+<img alt="_images/usecase.png" src="_images/usecase.png" />
+</div>
+<div class="section" id="visitor-use-case">
+<h2>visitor use case<a class="headerlink" href="#visitor-use-case" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/visitor_usecase.png" src="_images/visitor_usecase.png" />
+</div>
+<div class="section" id="student-use-case">
+<h2>student use case<a class="headerlink" href="#student-use-case" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/student_usecase.png" src="_images/student_usecase.png" />
+</div>
+<div class="section" id="instructor-use-case">
+<h2>instructor use case<a class="headerlink" href="#instructor-use-case" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/instructor_usecase.png" src="_images/instructor_usecase.png" />
+</div>
+<div class="section" id="tas-use-case">
+<h2>tas use case<a class="headerlink" href="#tas-use-case" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/tas_usecase.png" src="_images/tas_usecase.png" />
+<p>Fig: use case diagram</p>
+<p>B- Sequence diagram</p>
+<p>A sequence diagram is an interaction diagram. From the name it?s clear that the diagram deals with some sequences, which are the sequence of messages flowing from one object to another. It?s use to visualize the sequence of calls in a system to perform a specific functionality.</p>
+<img alt="_images/sequence.png" src="_images/sequence.png" />
+<p>Fig: sequence diagram</p>
+<p>C- Activity diagram</p>
+<p>Activity diagram describes the flow of contol in a system. It consists of activities and links. Activity diagram are used t visualize the floor of controls in a system.</p>
+<img alt="_images/activity.png" src="_images/activity.png" />
+<p>Fig: activity diagram</p>
+</div>
+<div class="section" id="iii-2-3-2-structural-uml-diagrams">
+<h2>III-2-3-2 Structural UML diagrams<a class="headerlink" href="#iii-2-3-2-structural-uml-diagrams" title="Permalink to this headline">¶</a></h2>
+<p>A- Class diagram</p>
+<p>A class diagram consists of classes, interfaces, associations and collaboration. In this lab project, this class diagram bellow represent basically the object-oriented view of our system.</p>
+<img alt="_images/class.png" src="_images/class.png" />
+<p>Fig: class diagram</p>
+<p>B- Component diagram</p>
+<p>A component diagram represent a set of components and their relationships. These components consist of classes, interfaces and collaborations. It represents the implementation view of a system.</p>
+<img alt="_images/component.png" src="_images/component.png" />
+<p>Fig: component diagram</p>
+</div>
+</div>
+<div class="section" id="iii-3-scenario">
+<h1>III-3 SCENARIO:<a class="headerlink" href="#iii-3-scenario" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="create-account">
+<h2>create account<a class="headerlink" href="#create-account" title="Permalink to this headline">¶</a></h2>
+<p>When the instructor wants to create account he/she will:</p>
+<p>Enter name</p>
+<p>Enter id</p>
+<p>Enter email</p>
+<p>Enter phone number</p>
+<p>Enter course</p>
+<p>Enter password</p>
+<p>Enter nationality</p>
+<p>Enter gender</p>
+<p>Press the button create</p>
+<p>Press enter</p>
+<p>when the student wants to create account he/she will:</p>
+<p>enter name</p>
+<p>Enter id</p>
+<p>Enter email</p>
+<p>Enter phone number</p>
+<p>Enter course</p>
+<p>Enter password</p>
+<p>Enter nationality</p>
+<p>Enter gender</p>
+<p>Press the button create</p>
+<p>Press enter</p>
+<p>when the visitor want to create account he/she will :</p>
+<p>Enter name</p>
+<p>Enter id</p>
+<p>Enter course</p>
+<p>Enter email</p>
+<p>Enter password</p>
+<p>Enter phone number</p>
+<p>Press the button create</p>
+<p>Press enter</p>
+<p>when the TAs wants to create account he/she will:</p>
+<p>Enter name</p>
+<p>Enter id</p>
+<p>Enter password</p>
+<p>Press the button create</p>
+<p>Press enter</p>
+<p>when the administrator wants to create account he/she will:</p>
+<p>Enter name</p>
+<p>Enter id</p>
+<p>Enter password</p>
+<p>Enter email</p>
+<p>Press the button create</p>
+<p>Press enter</p>
+</div>
+<div class="section" id="set-initial-password">
+<h2>set initial password<a class="headerlink" href="#set-initial-password" title="Permalink to this headline">¶</a></h2>
+<p>when the instructor wants to set initial password he/she will:</p>
+<p>Enter a new password</p>
+<p>Confirm this new password</p>
+<p>Press the button save</p>
+<p>Press ok</p>
+<p>when the student wants to set initial password he/she will:</p>
+<p>Enter a new password</p>
+<p>Confirm this new password</p>
+<p>Press the button save</p>
+<p>Press ok</p>
+<p>when the visitor wants to set initial password he/she will:</p>
+<p>Enter a new password</p>
+<p>Confirm this new password</p>
+<p>Press the button save</p>
+<p>Press ok</p>
+<p>when the administrator wants to set initial password he/she will:</p>
+<p>Enter a new password</p>
+<p>Confirm this new password</p>
+<p>Press the button save</p>
+<p>Press ok</p>
+<p>when the TAs wants to set initial password he/she will:</p>
+<p>Enter a new password</p>
+<p>Confirm this new password</p>
+<p>Press the button save</p>
+<p>Press ok</p>
+<p>delete account</p>
+<p>when the instructor want to delete account he/she will:</p>
+<p>Click in account</p>
+<p>Press the button delete</p>
+<p>Press enter</p>
+<p>when the student want to delete account he/she will:</p>
+<p>Click in account</p>
+<p>Press the button delete</p>
+<p>Press enter</p>
+<p>when the visitor want to delete account he/she will:</p>
+<p>Click in account</p>
+<p>Press the button delete</p>
+<p>Press enter</p>
+<p>when the TAs want to delete account he/she will:</p>
+<p>Click in account</p>
+<p>Press the button delete</p>
+<p>Press enter</p>
+<p>when the administrator wants to delete account he/she will:</p>
+<p>Click in account</p>
+<p>Press the button delete</p>
+<p>Press enter</p>
+</div>
+<div class="section" id="set-deadline">
+<h2>set deadline<a class="headerlink" href="#set-deadline" title="Permalink to this headline">¶</a></h2>
+<p>when the instructor wants to set deadline he/she will:</p>
+<p>Click on information</p>
+<p>Click on set deadline</p>
+<p>Press save</p>
+<p>Press enter</p>
+<p>when the TAs wants to set deadline he/she will:</p>
+<p>Click on information</p>
+<p>Click on set deadline</p>
+<p>Press save</p>
+<p>Press enter</p>
+</div>
+<div class="section" id="give-feedback">
+<h2>give feedback<a class="headerlink" href="#give-feedback" title="Permalink to this headline">¶</a></h2>
+<p>when the instructor wants to give feedback he/she will:</p>
+<p>Click on feedback</p>
+<p>click on the button sent</p>
+<p>Press enter</p>
+<p>when the TAs wants to give feedback he/she will:</p>
+<p>Click on feedback</p>
+<p>click on the button sent</p>
+<p>Press enter</p>
+</div>
+<div class="section" id="check-feedback">
+<h2>check feedback<a class="headerlink" href="#check-feedback" title="Permalink to this headline">¶</a></h2>
+<p>when the student wants to check feedback he/she will:</p>
+<p>Click on feedback</p>
+<p>Click on the button check</p>
+<p>Press enter</p>
+<p>when the visitor wants to check feedback he/she will:</p>
+<p>Click on feedback</p>
+<p>Click on the button check</p>
+<p>Press enter</p>
+</div>
+<div class="section" id="send-request">
+<h2>send request<a class="headerlink" href="#send-request" title="Permalink to this headline">¶</a></h2>
+<p>when the student wants to send request he/she will:</p>
+<p>Click on request</p>
+<p>Click on the button send</p>
+<p>Press enter</p>
+<p>login in the web portal</p>
+<p>Fill in your name or email</p>
+<p>Fill in your password</p>
+<p>Press the button connection</p>
+</div>
+<div class="section" id="id1">
+<h2>check feedback<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>Click on feedback menu</p>
+<p>Click on the link</p>
+<p>Open the link</p>
+<p>Read the link</p>
+<p>Download the link</p>
+</div>
+<div class="section" id="set-the-deadline">
+<h2>set the deadline<a class="headerlink" href="#set-the-deadline" title="Permalink to this headline">¶</a></h2>
+<p>Click on the calendar</p>
+<p>Select the date</p>
+<p>Click on extend deadline</p>
+<p>Click on update deadline</p>
+<p>Press in save new deadline</p>
+</div>
+<div class="section" id="delete-account">
+<h2>delete account<a class="headerlink" href="#delete-account" title="Permalink to this headline">¶</a></h2>
+<p>Click on users account</p>
+<p>Select the account</p>
+<p>Click on delete</p>
+<p>Click on suspend account</p>
+<p>Press in the button enter</p>
+</div>
+<div class="section" id="initialize-a-password">
+<h2>initialize a password<a class="headerlink" href="#initialize-a-password" title="Permalink to this headline">¶</a></h2>
+<p>Select user account</p>
+<p>Choose the account</p>
+<p>Click on the button initialize</p>
+<p>Fill in the password</p>
+<p>Save the new password</p>
+<p>Press the button enter</p>
+</div>
+<div class="section" id="id2">
+<h2>send request<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>Press request button</p>
+<p>Fill in your request</p>
+<p>Press send request</p>
+<p>Save the request</p>
+</div>
+<div class="section" id="id3">
+<h2>give feedback<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>Click in student email</p>
+<p>Choose the student email</p>
+<p>Send feedback</p>
+</div>
+</div>
+<div class="section" id="iv-prioritization-and-release-plan">
+<h1>IV- PRIORITIZATION AND RELEASE PLAN:<a class="headerlink" href="#iv-prioritization-and-release-plan" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="iv-1-programming-language">
+<h1>IV -1 PROGRAMMING LANGUAGE:<a class="headerlink" href="#iv-1-programming-language" title="Permalink to this headline">¶</a></h1>
+<p>JAVA JDK 8</p>
+<p>we use java language because in java everything is an object, it can be easily extended since it is based on the object model. It?s simple and easy to learn, it?s secure, it?s portable, it?s robust, it?s interpreted : java byte code is translated on the fly to native machine instructions and is not stored anywhere.java has a high performance and it?s multithreaded : it?s possible to write programs that can perform many tasks simultaneously.</p>
+<p>WampServer</p>
+<p>In our project, we have used the server Wamp, which provides the basics for setting up your local Apache/PHP/MySQL environment on windows.</p>
+<p>Apache</p>
+<p>Is our web server software.</p>
+<p>PHP</p>
+<p>Is the general purpose scripting language that runs on Apache.</p>
+<p>MySQL</p>
+<p>Is the database server software that works hand-in-hand with PHP and Apache. phpMyAdmin is a free software tool written in PHP, intended to handle the administration of MYSQL over the web. Concerning our project, we have used phpMyAdmin to develop our database.</p>
+<p>SUBLIME</p>
+<p>Is a test editor which helps us to write our srs in Read the doc.</p>
+<p>DIA</p>
+<p>Is an application which helps us to do our UML diagrams.</p>
+<p>VISUAL STUDIO</p>
+<p>Is a source code editor developed by Microsoft for windows, linux and macOS. It includes support for debugging, embedded Git control…in our lab project, we choose visual studio to implement our application and develop environment tools.</p>
+<p>##IV-2 DESIGN CONSTRAINTS:</p>
+<p>This part includes the design constraints on the software caused by the hardware.</p>
+<p>###IV-2-1 Hard drive space</p>
+<p>For our project, the application’s need of hard drive space.</p>
+<p>For meter we need MegaByte MB.</p>
+<p>###IV-2-2 Application memory usage</p>
+<p>Application memory can take GegaByte MB. Project includes many applications.</p>
+<p>###IV-3 Software system attributes</p>
+<p>The attribute requirements are the heart ans soul of why our customers will value our software.</p>
+<p>Reliability</p>
+<p>the reliability system. our system should gives the right result on a search.</p>
+<p>Maintainability</p>
+<p>Application should be easy to extend. code should be written in a way that it favors implementatio of new functions.</p>
+<p>Security</p>
+<p>The Communication between system and server need to be more secure. should respect the security principles such as: authentification, confidently, verification..</p>
+<p>Availability</p>
+<p>The system should be available when it is used.</p>
+<p>Portability</p>
+<p>Application should be portable with multiple system such as LINUX, WINDOWS, iOS, ANDROID, DEBIAN…</p>
+<p>Robustness</p>
+<p>our system should be robust to save amount of data and satistying the most of customers.</p>
+</div>
+<div class="section" id="references">
+<h1>REFERENCES:<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://cn.bing.com/search?q=running+environment+phpmysql&amp;src=IE-TopResult&amp;FORM=IETR02&amp;conversationid=&amp;pc=EUPP_">https://cn.bing.com/search?q=running+environment+phpmysql&amp;src=IE-TopResult&amp;FORM=IETR02&amp;conversationid=&amp;pc=EUPP_</a> <a class="reference external" href="https://www.tutorialspoint.com/uml/uml_standard_diagrams.htm">https://www.tutorialspoint.com/uml/uml_standard_diagrams.htm</a> <a class="reference external" href="https://www.tutorialspoint.com/uml/uml_standard_diagrams.htm">https://www.tutorialspoint.com/uml/uml_standard_diagrams.htm</a> <a class="reference external" href="https://courses.cs.washington.edu/courses/cse403/11sp/lectures/lecture08-uml1.pdf">https://courses.cs.washington.edu/courses/cse403/11sp/lectures/lecture08-uml1.pdf</a> <a class="reference external" href="http://www.nyu.edu/classes/jcf/g22.2440-001_sp09/handouts/UMLBasics.pdf">http://www.nyu.edu/classes/jcf/g22.2440-001_sp09/handouts/UMLBasics.pdf</a> <a class="reference external" href="https://www.ibm.com/support/knowledgecenter/SS8PJ7_9.6.1/com.ibm.xtools.modeler.doc/topics/cinterfc.html">https://www.ibm.com/support/knowledgecenter/SS8PJ7_9.6.1/com.ibm.xtools.modeler.doc/topics/cinterfc.html</a> <a class="reference external" href="https://techwhirl.com/writing-software-requirements-specifications/">https://techwhirl.com/writing-software-requirements-specifications/</a> <a class="reference external" href="https://www.uml-diagrams.org/component-diagrams.html">https://www.uml-diagrams.org/component-diagrams.html</a> <a class="reference external" href="https://www.ibm.com/developerworks/rational/library/dec04/bell/index.html">https://www.ibm.com/developerworks/rational/library/dec04/bell/index.html</a> <a class="reference external" href="https://docs.staruml.io/working-with-diagrams/component-diagram">https://docs.staruml.io/working-with-diagrams/component-diagram</a> <a class="reference external" href="https://online.visual-paradigm.com/tutorials/component-diagram-tutorial/">https://online.visual-paradigm.com/tutorials/component-diagram-tutorial/</a> <a class="reference external" href="https://www.tutorialspoint.com/uml/uml_component_diagram.htm">https://www.tutorialspoint.com/uml/uml_component_diagram.htm</a> <a class="reference external" href="https://online.visual-paradigm.com/diagrams.jsp#diagramlist:proj=0&amp;new=ComponentDiagram">https://online.visual-paradigm.com/diagrams.jsp#diagramlist:proj=0&amp;new=ComponentDiagram</a> <a class="reference external" href="https://www.smartdraw.com/component-diagram/">https://www.smartdraw.com/component-diagram/</a> <a class="reference external" href="https://tallyfy.com/uml-diagram/">https://tallyfy.com/uml-diagram/</a></p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">srs_group</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, guimeya.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
