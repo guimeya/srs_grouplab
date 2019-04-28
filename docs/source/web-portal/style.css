@@ -5,6 +5,7 @@ body{
       background-image:url("img7.jpg");
       background-image:url(images/img7.JPEG);	  
    }
+  /*in body, we describing margin, padding, background-image ...*/ 
    h1
    {
 	   text-align: center;
@@ -94,26 +95,31 @@ nav > ul > li{
      border-top: 5px solid #e44d26;
      background-color: RGBa(220, 220, 220, 2.15);
  }
+ /* represent the color of menu home*/
  .menu-news:hover
  {
      border-top: 5px solid #f1dc4f;
      background-color: RGBa(220, 220, 220, 2.15);
  }
+ /* represent the color of menu news*/
  .menu-services:hover
  {
      border-top: 5px solid #BBB;
      background-color:RGBa(220, 220, 220, 2.15);
  }
+ /* represent the color of menu services*/
  .menu-contact:hover
   {
      border-top: 5px solid #f1dc4f;
      background-color: RGBa(220, 220, 220, 2.15);
  }
+ /* represent the color of menu contact*/
  .menu-search:hover
   {
      border-top: 5px solid #e44d26;
      background-color: RGBa(220, 220, 220, 2.15);
  }
+ /* represent the color of menu search*/
  nav > ul > li:hover a
  {
      padding: 15px 30px 20px 30px;
