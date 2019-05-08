@@ -24,12 +24,7 @@ while($result){
 	 <link rel="stylesheet" href="style.css" />	
 	 <title>LAB REPORT REPOSITORY</title>
  <style> 
-.header{margin:-8px -8px 0px;background-image:linear-gradient(145deg,#7379ff,#b524ef);color:white;text-align:center;padding:10px;}  
-.container{width:100%}  
-.left{width:15%;float:left;}  
-.body{width:65%;float:left;background-color:pink;padding:5px;}  
-.right{width:15%;float:left;}  
-.footer{margin:-8px;clear:both;background-image:linear-gradient(145deg,#7379ff,#b524ef);color:white;text-align:center;padding:10px;} 	 
+	 
 </style>
 </head>  
 <body background="Images/fond.JPEG" bgproperties="fixed">  

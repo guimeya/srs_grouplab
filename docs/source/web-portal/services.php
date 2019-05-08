@@ -12,10 +12,6 @@
 	 <li class="menu-historique"><a href="historique.html">HISTORIQUE</a>
 	 <li class="menu-free_course"><a href="free_course.html">FREE COURSE</a>
 	 <li class="menu-visitor_access"><a href="visitor_access.html">VISITOR ACCESS</a>
-	 <li>
-	 <li>
-	 <li>
-	 <li>
 	</nav>
 </div>
 </body>

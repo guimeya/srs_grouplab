@@ -4,7 +4,7 @@
     <title>HOME PART</title>
     <meta charset='utf-8' />
 </head>
-<body background="Images/fond.JPEG" bgproperties="fixed">
+<body background="Images/img8.JPEG" bgproperties="fixed">
 <div>
     <p>HOME PART</p>
 	<nav>
