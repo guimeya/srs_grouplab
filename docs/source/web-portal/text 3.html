@@ -1,10 +1,10 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
-<head runat="server">
+<head id="Head1" runat="server">
     <title></title>
     <style type="text/css">
         .style1
@@ -19,7 +19,7 @@
         }
         .style3
         {
-            width: 855px;
+            width: 901px;
             height: 428px;
             color: #000000;
         }
@@ -48,7 +48,7 @@
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form2" runat="server">
     <div>
     
         <table class="style1">
@@ -75,6 +75,16 @@
                         NavigateUrl="~/MasterPage.master" style="font-weight: 700">SEARCH</asp:HyperLink>
                 </td>
             </tr>
+
+
+             <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+
+          
             <tr>
                 <td class="style2" style="background-color: #808080">
 
