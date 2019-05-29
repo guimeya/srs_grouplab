@@ -1,10 +1,9 @@
-<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
-<head id="Head1" runat="server">
+<head runat="server">
     <title></title>
     <style type="text/css">
         .style1
@@ -48,54 +47,56 @@
     </style>
 </head>
 <body>
-    <form id="form2" runat="server">
+    <form id="form1" runat="server">
     <div>
     
         <table class="style1">
             <tr>
                 <td class="style4" colspan="3" 
                     style="background-color: #999999; color: #FFFFFF;">
-                   <center> <h1> <strong>LAB REPORT REPOSITORY</strong> </h1> </center> </td>
+                   <center> <h1> <strong> LAB REPORT REPOSITORY </strong> </h1> </center> </td>
             </tr>
             <tr>
                 <td class="style5" colspan="3" style="background-color: #000000">
                     <asp:HyperLink ID="HOME" runat="server" ForeColor="#CC3300" 
-                        NavigateUrl="~/MasterPage.master" style="font-weight: 700">HOME</asp:HyperLink>
+                        NavigateUrl="~/MasterPage.master" style="font-weight: 700"> HOME </asp:HyperLink>
 &nbsp;
                     <asp:HyperLink ID="NEWS" runat="server" ForeColor="#CC3300" 
-                        NavigateUrl="~/MasterPage.master" style="font-weight: 700">NEWS</asp:HyperLink>
+                        NavigateUrl="~/MasterPage.master" style="font-weight: 700"> NEWS </asp:HyperLink>
 &nbsp;
                     <asp:HyperLink ID="SERVICES" runat="server" ForeColor="#CC3300" 
-                        NavigateUrl="~/MasterPage.master" style="font-weight: 700">SERVICES</asp:HyperLink>
+                        NavigateUrl="~/MasterPage.master" style="font-weight: 700"> SERVICES </asp:HyperLink>
 &nbsp;
                     <asp:HyperLink ID="CONTACT" runat="server" ForeColor="#CC3300" 
-                        NavigateUrl="~/MasterPage.master" style="font-weight: 700">CONTACT</asp:HyperLink>
+                        NavigateUrl="~/MasterPage.master" style="font-weight: 700"> CONTACT </asp:HyperLink>
 &nbsp;
                     <asp:HyperLink ID="SEARCH" runat="server" ForeColor="#CC3300" 
-                        NavigateUrl="~/MasterPage.master" style="font-weight: 700">SEARCH</asp:HyperLink>
+                        NavigateUrl="~/MasterPage.master" style="font-weight: 700"> SEARCH </asp:HyperLink>
                 </td>
             </tr>
-
-
-             <div>
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
-    </div>
-
-
-          
             <tr>
                 <td class="style2" style="background-color: #808080">
 
-                    <p> Actuality </p>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
+                    <strong style="font-style: oblique; text-transform: uppercase; color: #000000; font-family: 'Times New Roman', Times, serif">
+                    <asp:Panel ID="Panel3" runat="server" style="margin-top: 0px" Height="158px">
+                        <strong style="font-style: oblique; text-transform: uppercase; color: #000000; font-family: 'Times New Roman', Times, serif">
+                        <asp:TextBox ID="TextBox5" runat="server" Width="179px"> Actuality </asp:TextBox>
+                        <br />
+                        <br />
+                        <asp:TextBox ID="TextBox6" runat="server" Width="181px"> Forum </asp:TextBox>
+                        <br />
+                        <br />
+                        <asp:TextBox ID="TextBox7" runat="server" Width="182px"> Calendar </asp:TextBox>
+                        <br />
+                        <br />
+                        <asp:TextBox ID="TextBox8" runat="server" Width="183px"> Posts </asp:TextBox>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        </strong>
+                    </asp:Panel>
+                    </strong>
                     <br />
                     <br />
                     <br />
@@ -104,7 +105,7 @@
                 </td>
                 <td class="style3" style="background-image: url('Images/img4.jpg')">
                     <strong style="font-style: oblique; text-transform: uppercase; color: #000000; font-family: 'Times New Roman', Times, serif">
-                 <h2> WELCOME TO MY WEB PORTAL </h2>
+                    <center><h2> WELCOME TO MY WEB PORTAL </h2></center>
                     <p> &nbsp;</p>
                     <p> &nbsp;</p>
                     <p> &nbsp;</p>
